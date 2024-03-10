@@ -113,6 +113,9 @@ class ProfileView(APIView):
             'id': user.id,
             'username': user.name,
             'email': user.email,
+            'document':user.document,
+            'birthOfDate':user.birth,
+            'plan':user.plan,
             # Adicione outros campos do usuário conforme necessário
         }
 
